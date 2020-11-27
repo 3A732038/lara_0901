@@ -23,11 +23,11 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            @foreach(range(1, 5) as $id)
+            @foreach($posts as $post)
             <div class="post-preview">
-                <a href="{{ route('posts.show', $id) }}">
+                <a href="{{ route('posts.show', $post->id) }}">
                     <h2 class="post-title">
-                        Post {{ $id }}
+                         {{ $post->title }}
                     </h2>
                     <h3 class="post-subtitle">
                         Subtitle
