@@ -27,4 +27,5 @@ Route::post('posts',[AdminPostsController::class,'store'])->name('admin.posts.st
     Route::get('posts', [AdminPostsController::class, 'index'])->name('admin.posts.index');
     Route::get('posts/create', [AdminPostsController::class, 'create'])->name('admin.posts.create');
     Route::get('posts/{id}/edit', [AdminPostsController::class, 'edit'])->name('admin.posts.edit');
+    Route::patch('/posts/{id}',[AdminPostsController::class,'update'])->name('admin.posts.update');
 });
