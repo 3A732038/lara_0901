@@ -34,4 +34,9 @@ class AdminPostsController extends Controller
     $post->update($request->all());
     return redirect()->route('admin.posts.index');
     }
+    public  function  destory($id)
+    {
+         Post::destroy($id);
+         return redirect()->route('admin.posts.index');
+    }
 }
