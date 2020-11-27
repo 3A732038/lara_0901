@@ -31,7 +31,7 @@
 <div class="row">
     <div class="col-lg-12">
         <form action="{{route('admin.posts.store')}}"method="post" role="form">
-   @csrf
+            @csrf
             <div class="form-group">
                 <label for="title">標題：</label>
                 <input id="title" name="title" class="form-control" placeholder="請輸入文章標題">
